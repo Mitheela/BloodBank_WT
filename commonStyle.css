@@ -20,12 +20,11 @@
 .otherpage{
 	background-color:rgb(219, 235, 241);
 	top:100px;
-	left:290px;
+	left:310px;
 	width: 65%;
 	height:50%;
-	position: fixed;
 	font-size:16px;
-	
+	position:fixed;
 	}
 .cell{
 background-color: rgb(192,192,192);

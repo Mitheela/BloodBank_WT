@@ -8,14 +8,14 @@ $name=" ";
 $err_name=" ";
 $phonenumber=" ";
 $err_phonenumber=" ";
-$blood="";
-$err_blood="";
-$quantity="";
+$blood=" ";
+$err_blood=" ";
+$quantity=" ";
 $err_quantity=" ";
-$hname="";
-$err_hname="";
-$hlocation="";
-$err_hlocation="";
+$hname=" ";
+$err_hname=" ";
+$hlocation=" ";
+$err_hlocation=" ";
 if ($_SERVER["REQUEST_METHOD"] == "POST")
    {
 	   if(empty($_POST["name"]))
@@ -41,16 +41,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 		{
 			 $phonenumber=$_POST["phonenumber"];
 		}
-		if ($_POST["blood"] != '0')
+		if ($_POST["blood"] != "0")
 		{
 			$err_blood = "Blood Group is Required"; 
 			$hasError=true;
 		}
-		if ($_POST["quantity"] != '0')
-		{
-			$err_quantity = "Quantity is Required"; 
-			$hasError=true;
-		}
+		if(!isset($_POST["quantity"]))
+		{ 
+        $err_quantity = "Quantity is Required"; 
+		$hasError=true;
+		} 
 		if(empty($_POST["hname"]))
 	    {
 			$err_hname="Hospital Name is Required";
@@ -122,18 +122,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                             <option>AB-</option>
                         </select><span><?php echo $err_blood;?></span>
                     </td>
-            
- </tr>
- <tr>
-                    <td>Quantity</td>
-                    <td>:
-                        <select name="quantity" value="">
-                            <option disabled selected>Choose</option>
-                            <option>1 Bag</option>
-                            <option>2 Bag</option>
-                            <option>3 Bag</option>
-                        </select><span><?php echo $err_quantity;?></span>
+</tr>
+                <tr>
+                    <td><span>Quantity</span></td>
+                    <td>:<input type="radio" value="1 Bag" name="quantity">1 Bag<input type="radio" value="2 Bag" name="quantity">2 Bag<input type="radio" value="3 Bag" name="quantity">3 Bag
                     </td>
+					<td><br><span><?php echo $err_quantity;?></span></td>
+                </tr>
             
  </tr>
  <tr>  

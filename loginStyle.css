@@ -1,53 +1,65 @@
-.login {
-    width: 530px;
-    height: 330px;
-    background-color: rgb(177, 216, 218);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+.login-div {
+    border: 3px solid black;
     margin: auto;
-    max-width: 100%;
-    max-height: 100%;
-    overflow: auto;
-    font-family: unset
+    width: 355px;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
 }
 
-table {
-    margin: 20px;
+.btn-mine {
+    background-color: rgb(76, 206, 43);
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(247, 247, 247);
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
 }
 
-table tr td {
-    height: 30px;
-    padding: 4px;
+.btn-mine:hover {
+    background-color: rgb(6, 163, 40);
+}
+
+.btn-mine:active {
+    background-color: green;
+}
+
+.err-msg {
+    color: red;
+    font-size: 15px;
+    font-family: cambria;
+}
+
+::placeholder {
+    /* color: rgb(0, 0, 0); */
+    opacity: 1;
+    /* text-align: center; */
 }
 
 input {
     height: 100%;
-    border: 3px solid rgb(17, 3, 54);
-    padding: 0px;
+    width: 200px;
+    border: 2px solid rgb(182, 182, 182);
+    padding: 5px;
     margin: 0px;
-    ;
-}
-
-h3 {
-    padding: 0px;
-    margin: 0px;
+    border-radius: 10px;
 }
 
 ::placeholder {
-    color: rgb(0, 0, 0);
+    /* color: rgb(8, 4, 90); */
     opacity: 1;
-    text-align: center;
+    /* text-align: center; */
 }
 
  :-ms-input-placeholder {
-    color: rgb(0, 0, 0);
+    /* color: rgb(8, 4, 90); */
     text-align: center;
 }
 
  ::-ms-input-placeholder {
-    color: rgb(0, 0, 0);
+    /* color: rgb(8, 4, 90); */
     text-align: center;
 }
