@@ -1,0 +1,22 @@
+.Regbox {
+        border: 3px solid rgb(12, 196, 95);
+        margin: auto;
+        width: 450px;
+        padding-bottom: 50px;
+        margin-top: 120px;
+        border-radius: 30px;
+        background-color: rgb(219, 235, 241);
+    }
+    
+    .header {
+        height: 60px;
+        width: 100%;
+        background-color: rgb(255, 2, 2);
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* for viewing header content in a row*/
+        display: flex;
+        justify-content: left;
+        color: rgb(255, 255, 255);
+    }

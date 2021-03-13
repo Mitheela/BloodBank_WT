@@ -1,0 +1,57 @@
+.header{
+	height:80px;
+	width:98%;
+	position:fixed;
+	border:2px solid mediumaquamarine;
+	font-size:12px;
+	color:darkred;
+	background-color:mediumaquamarine;
+	}
+.tab{
+	top:150px;
+	left:350px;
+	width: 65%;
+	height:50%;
+	position: fixed;
+	color:red;
+	font-size:24px;
+	
+}
+.otherpage{
+	background-color:rgb(219, 235, 241);
+	top:100px;
+	left:290px;
+	width: 65%;
+	height:50%;
+	position: fixed;
+	font-size:16px;
+	
+	}
+.cell{
+background-color: rgb(192,192,192);
+}
+
+.menu{
+	top:90px;
+	height:84%;
+	width:17%;
+	position:fixed;
+border:2px solid teal;
+background-color:teal;
+}
+.menucell{
+	background-color: rgb(192,192,192);
+	color:black;
+	width:17%;
+	height:50px;
+}
+.rightinfo{
+	color:black;
+	font-size:15px;
+	top:25px;
+	width:98%;
+	position:fixed;
+}
+a:link {
+  text-decoration: none;
+}

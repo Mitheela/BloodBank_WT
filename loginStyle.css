@@ -1,0 +1,53 @@
+.login {
+    width: 530px;
+    height: 330px;
+    background-color: rgb(177, 216, 218);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    font-family: unset
+}
+
+table {
+    margin: 20px;
+}
+
+table tr td {
+    height: 30px;
+    padding: 4px;
+}
+
+input {
+    height: 100%;
+    border: 3px solid rgb(17, 3, 54);
+    padding: 0px;
+    margin: 0px;
+    ;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    text-align: center;
+}
+
+ :-ms-input-placeholder {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+ ::-ms-input-placeholder {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
